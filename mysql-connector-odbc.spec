@@ -11,10 +11,10 @@ Source0:	http://sunsite.icm.edu.pl/mysql/Downloads/MyODBC3/%{name}-%{version}.%{
 URL:		http://www.mysql.com/products/connector/odbc/
 BuildRequires:	autoconf
 BuildRequires:	automake
-#BuildRequires:	iodbc >= 3.0
+#BuildRequires:	libiodbc-devel >= 3.0
 BuildRequires:	qt-devel >= 3.0
-#BuildRequires:	unixODBC >= 3.0
-BuildRequires:	unixODBC >= 2.0
+#BuildRequires:	unixODBC-devel >= 3.0
+BuildRequires:	unixODBC-devel >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,7 +27,7 @@ Microsoft Access, Microsoft Excel, and Borland Delphi.
 %description -l pl
 MySQL Connector/ODB (znany tak¿e jako MyODBC) umo¿liwia po³±czenie
 z serwerem MySQL przy wykorzystaniu API bazy ODBC na wszystkich
-platformach Microsoft Windows oraz na wiekszo¶ci systemów Unix,
+platformach Microsoft Windows oraz na wiêkszo¶ci systemów Unix,
 w³±czaj±c takie aplikacje i ¶rodowiska programistyczne jak
 Microsoft Access, Microsoft Excel oraz Borland Delphi.
 
@@ -55,7 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
