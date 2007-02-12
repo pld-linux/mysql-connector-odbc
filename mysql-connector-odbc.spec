@@ -1,6 +1,6 @@
 %define		_ver	12
 Summary:	MySQL Connector/ODBC - ODBC driver for MySQL
-Summary(pl):	MySQL Connector/ODBC - sterownik ODBC dla MySQL
+Summary(pl.UTF-8):   MySQL Connector/ODBC - sterownik ODBC dla MySQL
 Name:		mysql-connector-odbc
 Version:	3.51
 Release:	0.1
@@ -24,11 +24,11 @@ Microsoft Windows and most Unix platforms, including through
 such applications and programming environments such as 
 Microsoft Access, Microsoft Excel, and Borland Delphi.
 
-%description -l pl
-MySQL Connector/ODB (znany tak¿e jako MyODBC) umo¿liwia po³±czenie
+%description -l pl.UTF-8
+MySQL Connector/ODB (znany takÅ¼e jako MyODBC) umoÅ¼liwia poÅ‚Ä…czenie
 z serwerem MySQL przy wykorzystaniu API bazy ODBC na wszystkich
-platformach Microsoft Windows oraz na wiêkszo¶ci systemów Unix,
-w³±czaj±c takie aplikacje i ¶rodowiska programistyczne jak
+platformach Microsoft Windows oraz na wiÄ™kszoÅ›ci systemÃ³w Unix,
+wÅ‚Ä…czajÄ…c takie aplikacje i Å›rodowiska programistyczne jak
 Microsoft Access, Microsoft Excel oraz Borland Delphi.
 
 %prep
