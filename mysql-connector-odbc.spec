@@ -1,6 +1,6 @@
 %define		_ver	12
 Summary:	MySQL Connector/ODBC - ODBC driver for MySQL
-Summary(pl.UTF-8):   MySQL Connector/ODBC - sterownik ODBC dla MySQL
+Summary(pl.UTF-8):	MySQL Connector/ODBC - sterownik ODBC dla MySQL
 Name:		mysql-connector-odbc
 Version:	3.51
 Release:	0.1
