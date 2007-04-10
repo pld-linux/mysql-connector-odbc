@@ -12,7 +12,7 @@ URL:		http://www.mysql.com/products/connector/odbc/
 BuildRequires:	autoconf
 BuildRequires:	automake
 #BuildRequires:	libiodbc-devel >= 3.0
-BuildRequires:	qt-devel >= 3.0
+BuildRequires:	qt-devel >= 1:3.0
 #BuildRequires:	unixODBC-devel >= 3.0
 BuildRequires:	unixODBC-devel >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
