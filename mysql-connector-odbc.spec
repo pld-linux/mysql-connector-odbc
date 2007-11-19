@@ -1,4 +1,4 @@
-%define		_ver	12
+%define		_ver	22r857
 Summary:	MySQL Connector/ODBC - ODBC driver for MySQL
 Summary(pl.UTF-8):	MySQL Connector/ODBC - sterownik ODBC dla MySQL
 Name:		mysql-connector-odbc
@@ -6,8 +6,9 @@ Version:	3.51
 Release:	0.1
 License:	GPL
 Group:		Libraries
-Source0:	http://sunsite.icm.edu.pl/mysql/Downloads/MyODBC3/%{name}-%{version}.%{_ver}.tar.gz
-# Source0-md5:	a484f590464fb823a8f821b2f1fd7fef
+#Source0:	http://sunsite.icm.edu.pl/mysql/Downloads/MyODBC3/%{name}-%{version}.%{_ver}.tar.gz
+Source0:	http://sunsite.informatik.rwth-aachen.de/mysql/Downloads/Connector-ODBC/3.51/%{name}-%{version}.%{_ver}.tar.gz
+# Source0-md5:	0147e833711c9ef70c03f57c2641ef9f
 URL:		http://www.mysql.com/products/connector/odbc/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -39,9 +40,11 @@ Microsoft Access, Microsoft Excel oraz Borland Delphi.
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
-%{__make} \
+%configure \
+	--with-qt-includes=/usr/include/qt \
+	--with-qt-libraries=%{_libdir}/qt \
 	--with-x=no
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
