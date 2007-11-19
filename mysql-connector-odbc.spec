@@ -3,7 +3,7 @@ Summary:	MySQL Connector/ODBC - ODBC driver for MySQL
 Summary(pl.UTF-8):	MySQL Connector/ODBC - sterownik ODBC dla MySQL
 Name:		mysql-connector-odbc
 Version:	3.51
-Release:	1
+Release:	1.%{_ver}.0
 License:	GPL
 Group:		Libraries
 #Source0:	http://sunsite.icm.edu.pl/mysql/Downloads/MyODBC3/%{name}-%{version}.%{_ver}.tar.gz
